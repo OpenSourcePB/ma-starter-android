@@ -13,15 +13,13 @@ import digital.pashabank.domain.usecase.transaction.ObserveTransactionsUseCase
 import digital.pashabank.domain.usecase.transaction.SyncTransactionsUseCase
 import digital.pashabank.presentation.base.BaseViewModel
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.onEach
-import timber.log.Timber
 
 class MainPageViewModel(
     observeCustomerUseCase: ObserveCustomerUseCase,
     syncCustomersUseCase: SyncCustomersUseCase,
-    private val observeCardsUseCase: ObserveCardsUseCase,
+    observeCardsUseCase: ObserveCardsUseCase,
     private val syncCardsUseCase: SyncCardsUseCase,
     private val observeTransactionsUseCase: ObserveTransactionsUseCase,
     private val syncTransactionsUseCase: SyncTransactionsUseCase
@@ -54,24 +52,21 @@ class MainPageViewModel(
             .filterNotNull()
             .onEach {
                 _customer.postValue(it)
-                observeCards(it.id)
             }
             .launchNoLoading()
 
-        syncCustomersUseCase.launch(Unit)
-    }
-
-    private fun observeCards(customerId: String) {
-        observeCardsUseCase.execute(ObserveCardsUseCase.Params(customerId))
+        observeCardsUseCase.execute(Unit)
             .filterNotNull()
             .onEach { postState(MainPageState.ShowCards(it)) }
             .launchNoLoading()
 
-        loadCards(customerId)
+        syncCustomersUseCase.launch(Unit)
+
+        loadCards()
     }
 
-    private fun loadCards(customerId: String) {
-        syncCardsUseCase.launch(SyncCardsUseCase.Param(customerId), loadingHandle = {
+    private fun loadCards() {
+        syncCardsUseCase.launch(Unit, loadingHandle = {
             _cardSyncLoading.postValue(it)
         })
     }
@@ -88,16 +83,13 @@ class MainPageViewModel(
     }
 
     private fun loadTransactions(cardId: String) {
-        val customerId = _customer.value?.id ?: return
-
         syncTransactionsUseCase.launch(
-            SyncTransactionsUseCase.Param(customerId, cardId),
+            SyncTransactionsUseCase.Param(cardId),
             loadingHandle = {
                 _isTransactionLoading.postValue(it)
             }) {
         }
     }
-
 
     fun setActiveCard(card: Card) {
         _activeCard.postValue(card)
