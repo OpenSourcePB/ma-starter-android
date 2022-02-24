@@ -1,8 +1,8 @@
 package digital.pashabank.data.mapper
 
-import digital.pashabank.data.local.customer.model.card.CardLocalDto
-import digital.pashabank.data.local.customer.model.customer.CustomerLocalDto
-import digital.pashabank.data.local.customer.model.transaction.TransactionLocalDto
+import digital.pashabank.data.local.card.model.CardLocalDto
+import digital.pashabank.data.local.customer.model.CustomerLocalDto
+import digital.pashabank.data.local.transaction.model.TransactionLocalDto
 import digital.pashabank.data.remote.model.card.CardRemoteDto
 import digital.pashabank.data.remote.model.customer.CustomerRemoteDto
 import digital.pashabank.data.remote.model.transaction.TransactionRemoteDto

@@ -3,19 +3,18 @@ package digital.pashabank.domain.usecase.card
 import digital.pashabank.domain.base.BaseFlowUseCase
 import digital.pashabank.domain.exceptions.ErrorConverter
 import digital.pashabank.domain.model.customer.Card
-import digital.pashabank.domain.repository.CustomerRepository
+import digital.pashabank.domain.repository.CardRepository
 import kotlinx.coroutines.flow.Flow
 import kotlin.coroutines.CoroutineContext
 
 class ObserveCardsUseCase(
     context: CoroutineContext,
     converter: ErrorConverter,
-    private val repository: CustomerRepository
-) : BaseFlowUseCase<ObserveCardsUseCase.Params, List<Card>>(context, converter) {
+    private val repository: CardRepository
+) : BaseFlowUseCase<Unit, List<Card>>(context, converter) {
 
-    override fun createFlow(params: Params): Flow<List<Card>> {
-        return repository.observeCards(params.customerId)
+    override fun createFlow(params: Unit): Flow<List<Card>> {
+        return repository.observeCards()
     }
 
-    data class Params(val customerId: String)
 }
