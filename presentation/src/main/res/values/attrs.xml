@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="textColorMain" format="color|reference"/>
+    <attr name="textColorContrasting" format="color|reference"/>
+    <attr name="textColorError" format="color|reference"/>
+    <attr name="textColor_2" format="color|reference"/>
+    <attr name="textColor_3" format="color|reference"/>
+    <attr name="textColor_4" format="color|reference"/>
+    <attr name="textColor_5" format="color|reference"/>
+    <attr name="textColor_6" format="color|reference"/>
+
+    <attr name="dotColor" format="color|reference"/>
+    <attr name="dotColorSelected" format="color|reference"/>
+
+    <attr name="backgroundClickableCommon" format="reference"/>
+
+    <attr name="textStyleGreetings" format="reference"/>
+    <attr name="buttonBig" format="reference"/>
+</resources>

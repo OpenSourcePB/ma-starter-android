@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="pomegranate">#F22925</color>
+    <color name="greenDark">#004C45</color>
+    <color name="blueRibbon800">#016FE8</color>
+    <color name="mirage10">#F4F5F7</color>
+    <color name="mirage200">#A2A5A7</color>
+    <color name="mirage400">#5D6166</color>
+    <color name="mirage500">#454A50</color>
+    <color name="mirage700">#171D24</color>
+    <color name="sunglow800">#FECE2F</color>
+    <color name="lightAsh">#61000000</color>
+    <color name="bg">#F4F7FB</color>
+    <color name="gray_light">#f8f8f8</color>
+    <color name="black37">#5E000000</color>
+
+    <color name="colorVisa">#B3FF0000</color>
+    <color name="colorMaster">#B35C00FF</color>
+    <color name="colorUnionPay">#B30027FF</color>
+</resources>

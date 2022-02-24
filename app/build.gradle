@@ -1,0 +1,53 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdk androidCompileSdk
+
+    defaultConfig {
+        applicationId "az.pashabank.androidstarter"
+        minSdk androidMinSdk
+        targetSdk androidTargetSdk
+
+        versionCode 1
+        versionName "v0.0.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix '-debug'
+            debuggable true
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            testProguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguardTest-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation project(":data")
+    implementation project(":domain")
+    implementation project(":presentation")
+
+    //DI
+    implementation "io.insert-koin:koin-android:${koinVersion}"
+
+    // Logger
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    // Test
+    testImplementation "junit:junit:${jUnitVersion}"
+}

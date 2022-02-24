@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="unknown_error_title">Xəta baş verdi</string>
+    <string name="unknown_error_text">Gözlənilməyən bir xəta baş verdi. Zəhmət olmasa daha sonra yenidən cəhd edin</string>
+    <string name="close">Bağla</string>
+    <string name="no_internet_title">İnternet şəbəkəsi yoxdur</string>
+    <string name="no_internet_error_text">Cihazınızda internet şəbəkəsi yoxdur və yaxud çox zəifdir</string>
+    <string name="loading_dialog_title">Zəhmət olmasa gözləyin</string>
+    <string name="loading_dialog_description">Məlumatları yükləyirik…</string>
+    <string name="error_unexpected">Görünür ki, bir xəta baş verdi. Zəhmət olmasa daha sonra bir daha cəhd edin</string>
+</resources>

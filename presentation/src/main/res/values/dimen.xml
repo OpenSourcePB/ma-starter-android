@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="offset_tiny">4dp</dimen>
+    <dimen name="offset_xtiny">6dp</dimen>
+    <dimen name="offset_xhalf">12dp</dimen>
+    <dimen name="offset">16dp</dimen>
+    <dimen name="offset_big">24dp</dimen>
+    <dimen name="offset_very_big">32dp</dimen>
+
+    <dimen name="dialog_loading_width">280dp</dimen>
+
+</resources>

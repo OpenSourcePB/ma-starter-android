@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="unknown_error_title">Something went wrong</string>
+    <string name="unknown_error_text">Sorry, unexpected error has happened. Please try again later</string>
+    <string name="close">Close</string>
+    <string name="no_internet_title">No internet connection</string>
+    <string name="no_internet_error_text">There is no or poor internet connection in your device</string>
+    <string name="loading_dialog_title">Please wait</string>
+    <string name="loading_dialog_description">We’re loading details…</string>
+    <string name="error_unexpected">It look like an error has occurred. Please, try again a little bit later</string>
+</resources>
