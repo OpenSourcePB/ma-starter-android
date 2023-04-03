@@ -59,7 +59,6 @@
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerCards"
         android:layout_width="match_parent"
@@ -67,6 +66,8 @@
         android:layout_marginTop="@dimen/offset_big"
         android:clipToPadding="false"
         android:visibility="gone"
+        tools:itemCount="10"
+        tools:listitem="@layout/list_card_item"
         android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"

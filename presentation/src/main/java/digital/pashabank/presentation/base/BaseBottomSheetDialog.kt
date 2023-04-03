@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.core.content.ContextCompat
-import az.pashabank.androidstarter.presentation.R
-import az.pashabank.androidstarter.presentation.databinding.FragmentBottomSheetDialogBaseBinding
+import az.pashabank.starter.presentation.R
+import az.pashabank.starter.presentation.databinding.FragmentBottomSheetDialogBaseBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import digital.pashabank.presentation.delegate.viewBinding
 import digital.pashabank.presentation.tools.Utils.updateBoldSpanWithBoldFont

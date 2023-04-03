@@ -11,7 +11,17 @@
         android:label="SplashFragment"
         tools:layout="@layout/fragment_splash">
         <action
-            android:id="@+id/action_splash_fragment_to_mainPageFragment"
+            android:id="@+id/toLogin"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="digital.pashabank.presentation.flow.main.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/toMain"
             app:destination="@id/mainPageFragment" />
     </fragment>
 
@@ -19,6 +29,6 @@
         android:id="@+id/mainPageFragment"
         android:name="digital.pashabank.presentation.flow.main.content.MainPageFragment"
         android:label="MainPageFragment"
-        tools:layout="@layout/fragment_main_page"/>
+        tools:layout="@layout/fragment_main_page" />
 
 </navigation>

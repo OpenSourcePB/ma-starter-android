@@ -18,10 +18,7 @@ import digital.pashabank.data.local.transaction.TransactionLocalDataSourceImpl
 import digital.pashabank.data.remote.CardApi
 import digital.pashabank.data.remote.CustomerApi
 import digital.pashabank.data.remote.TransactionApi
-import digital.pashabank.data.repository.CardRepositoryImpl
-import digital.pashabank.data.repository.CustomerRepositoryImpl
-import digital.pashabank.data.repository.ErrorConverterRepositoryImpl
-import digital.pashabank.data.repository.TransactionRepositoryImpl
+import digital.pashabank.data.repository.*
 import digital.pashabank.domain.di.ERROR_MAPPER_NETWORK
 import digital.pashabank.domain.di.IO_CONTEXT
 import digital.pashabank.domain.exceptions.ErrorMapper
@@ -108,6 +105,10 @@ val dataModule = module {
             customerLocalDataSource = get(),
             cardLocalDataSource = get()
         )
+    }
+
+    factory<AuthRepository> {
+        AuthRepositoryImpl()
     }
 
     factory<TransactionRepository> {

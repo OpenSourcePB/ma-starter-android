@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.activity.addCallback
 import androidx.core.view.isVisible
-import az.pashabank.androidstarter.presentation.databinding.FragmentMainPageBinding
+import az.pashabank.starter.presentation.databinding.FragmentMainPageBinding
 import digital.pashabank.domain.model.customer.Card
 import digital.pashabank.presentation.base.BaseFragment
 import digital.pashabank.presentation.extensions.gone

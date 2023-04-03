@@ -1,5 +1,7 @@
 package digital.pashabank.presentation.extensions
 
+import android.text.TextUtils
+import android.util.Patterns
 import java.util.*
 
 fun String.capitalizeFirstLetter(locale: Locale) =
@@ -10,3 +12,7 @@ fun String.capitalizeFirstLetter(locale: Locale) =
             ) else it.toString()
         }
     }.trimEnd()
+
+fun String.isValidEmail(): Boolean {
+    return (!TextUtils.isEmpty(this) && Patterns.EMAIL_ADDRESS.matcher(this).matches())
+}

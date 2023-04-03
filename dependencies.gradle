@@ -1,13 +1,13 @@
 ext {
     androidMinSdk = 21
-    androidCompileSdk = 31
-    androidTargetSdk = 31
+    androidCompileSdk = 33
+    androidTargetSdk = 33
     androidBuildTools = '30.0.3'
     kotlinVersion = "1.6.10"
     koinVersion = "2.1.6"
-    roomVersion = '2.4.1'
-    navigationVersion = "2.5.0-alpha03"
+    roomVersion = '2.5.0'
+    navigationVersion = "2.6.0-alpha08"
     coroutineVersion = "1.6.0"
-    lifecycleVersion = "2.4.0"
+    lifecycleVersion = "2.6.1"
     jUnitVersion = "4.13.2"
 }

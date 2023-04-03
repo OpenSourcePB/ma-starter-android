@@ -8,4 +8,10 @@
     <string name="loading_dialog_title">Please wait</string>
     <string name="loading_dialog_description">We’re loading details…</string>
     <string name="error_unexpected">It look like an error has occurred. Please, try again a little bit later</string>
+    <string name="login">Login</string>
+    <string name="hint_password">password</string>
+    <string name="enter_login_credentials">Enter login credentials</string>
+    <string name="hint_email">email</string>
+    <string name="enter_valid_emai_and_password">Please enter valid email and password</string>
+
 </resources>

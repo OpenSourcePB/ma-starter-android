@@ -9,4 +9,9 @@
     <string name="loading_dialog_title">Zəhmət olmasa gözləyin</string>
     <string name="loading_dialog_description">Məlumatları yükləyirik…</string>
     <string name="error_unexpected">Görünür ki, bir xəta baş verdi. Zəhmət olmasa daha sonra bir daha cəhd edin</string>
+    <string name="login">Daxil ol</string>
+    <string name="hint_password">şifrə</string>
+    <string name="enter_login_credentials">Email və şifrəni daxil edin</string>
+    <string name="hint_email">email</string>
+    <string name="enter_valid_emai_and_password">Zəhmət olmsa doğru email və şifrə daxil edin</string>
 </resources>

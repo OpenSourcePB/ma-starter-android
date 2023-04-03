@@ -2,14 +2,11 @@ package digital.pashabank.presentation.flow.splash
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.appcompat.app.AlertDialog
-import az.pashabank.androidstarter.presentation.R
-import az.pashabank.androidstarter.presentation.databinding.FragmentSplashBinding
+import az.pashabank.starter.presentation.databinding.FragmentSplashBinding
 import digital.pashabank.presentation.base.BaseFragment
 import kotlin.reflect.KClass
 
-class SplashFragment :
-    BaseFragment<SplashState, Nothing, SplashViewModel, FragmentSplashBinding>() {
+class SplashFragment : BaseFragment<SplashState, Nothing, SplashViewModel, FragmentSplashBinding>() {
 
     override val vmClazz: KClass<SplashViewModel>
         get() = SplashViewModel::class
@@ -21,13 +18,12 @@ class SplashFragment :
     override fun observeState(state: SplashState) {
         when (state) {
             SplashState.ProceedWithAuthorization -> proceedWithAuthorization()
-            SplashState.ProceedWithOnboarding -> proceedWithOnboarding()
+            SplashState.ProceedWithOnBoarding -> proceedWithOnBoarding()
         }
     }
 
-    private fun proceedWithOnboarding() {
-        val direction = SplashFragmentDirections.actionSplashFragmentToMainPageFragment()
-        viewModel.navigate(direction)
+    private fun proceedWithOnBoarding() {
+        viewModel.navigate(SplashFragmentDirections.toLogin())
     }
 
     private fun proceedWithAuthorization() {
