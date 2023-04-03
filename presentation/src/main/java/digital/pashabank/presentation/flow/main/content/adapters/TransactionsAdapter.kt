@@ -3,7 +3,7 @@ package digital.pashabank.presentation.flow.main.content.adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import az.pashabank.androidstarter.presentation.databinding.ListItemTransactionBinding
+import az.pashabank.starter.presentation.databinding.ListItemTransactionBinding
 import digital.pashabank.domain.model.customer.Transaction
 import digital.pashabank.presentation.extensions.*
 import digital.pashabank.presentation.tools.ShimmerLoaderAdapter

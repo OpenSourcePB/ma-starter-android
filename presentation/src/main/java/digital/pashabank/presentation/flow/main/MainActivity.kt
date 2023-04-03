@@ -3,7 +3,7 @@ package digital.pashabank.presentation.flow.main
 import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
-import az.pashabank.androidstarter.presentation.R
+import az.pashabank.starter.presentation.R
 import digital.pashabank.presentation.base.BaseActivity
 import org.koin.androidx.viewmodel.ext.android.viewModel
 

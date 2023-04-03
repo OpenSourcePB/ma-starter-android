@@ -2,7 +2,7 @@ package digital.pashabank.starter
 
 import android.annotation.SuppressLint
 import android.app.Application
-import az.pashabank.androidstarter.BuildConfig
+import az.pashabank.starter.app.BuildConfig
 import digital.pashabank.starter.appinitializers.AppInitializers
 import digital.pashabank.starter.di.appComponent
 import org.koin.core.context.startKoin

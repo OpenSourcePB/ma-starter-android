@@ -4,8 +4,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import az.pashabank.androidstarter.presentation.R
-import az.pashabank.androidstarter.presentation.databinding.ListCardItemBinding
+import az.pashabank.starter.presentation.R
+import az.pashabank.starter.presentation.databinding.ListCardItemBinding
 import digital.pashabank.domain.model.customer.Card
 import digital.pashabank.domain.model.customer.ECardType
 

@@ -24,7 +24,7 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
 import androidx.navigation.fragment.findNavController
 import androidx.viewbinding.ViewBinding
-import az.pashabank.androidstarter.presentation.R
+import az.pashabank.starter.presentation.R
 import digital.pashabank.presentation.common.LogoutHandler
 import digital.pashabank.presentation.flow.main.MainActivity
 import digital.pashabank.presentation.tools.NavigationCommand

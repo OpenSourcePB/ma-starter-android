@@ -15,7 +15,7 @@ class SplashViewModel(
                     postState(SplashState.ProceedWithAuthorization)
                 }
                 is SplashStatus.NotRegistered -> {
-                    postState(SplashState.ProceedWithOnboarding)
+                    postState(SplashState.ProceedWithOnBoarding)
                 }
             }
         }
@@ -23,6 +23,6 @@ class SplashViewModel(
 }
 
 sealed class SplashState {
-    object ProceedWithOnboarding : SplashState()
+    object ProceedWithOnBoarding : SplashState()
     object ProceedWithAuthorization : SplashState()
 }

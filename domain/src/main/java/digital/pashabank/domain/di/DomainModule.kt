@@ -7,6 +7,7 @@ import digital.pashabank.domain.usecase.card.SyncCardsUseCase
 import digital.pashabank.domain.usecase.customer.ObserveCustomerUseCase
 import digital.pashabank.domain.usecase.customer.SyncCustomersUseCase
 import digital.pashabank.domain.usecase.error.GetErrorFromCodeUseCase
+import digital.pashabank.domain.usecase.login.LoginUseCase
 import digital.pashabank.domain.usecase.splash.SplashUseCase
 import digital.pashabank.domain.usecase.transaction.ObserveTransactionsUseCase
 import digital.pashabank.domain.usecase.transaction.SyncTransactionsUseCase
@@ -82,6 +83,14 @@ val domainModule = module {
 
     factory {
         SyncTransactionsUseCase(
+            context = get(named(IO_CONTEXT)),
+            converter = get(),
+            repository = get()
+        )
+    }
+
+    factory {
+        LoginUseCase(
             context = get(named(IO_CONTEXT)),
             converter = get(),
             repository = get()

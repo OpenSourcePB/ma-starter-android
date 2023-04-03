@@ -6,6 +6,7 @@
     <color name="pomegranate">#F22925</color>
     <color name="greenDark">#004C45</color>
     <color name="blueRibbon800">#016FE8</color>
+    <color name="btn_blue_disabled">#ffcfcfcf</color>
     <color name="mirage10">#F4F5F7</color>
     <color name="mirage200">#A2A5A7</color>
     <color name="mirage400">#5D6166</color>
@@ -17,7 +18,17 @@
     <color name="gray_light">#f8f8f8</color>
     <color name="black37">#5E000000</color>
 
+    <color name="gray_hint">#D1D1D1</color>
+    <color name="gray_border">#80D1D1D1</color>
+    <color name="gray_text">#666666</color>
+    <color name="gray_check_status">#3A3A3C</color>
+
+    <color name="red">#FF0000</color>
+
     <color name="colorVisa">#B3FF0000</color>
     <color name="colorMaster">#B35C00FF</color>
     <color name="colorUnionPay">#B30027FF</color>
+
+    <color name="ripple_white">#4dffffff</color>
+
 </resources>

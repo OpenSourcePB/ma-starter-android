@@ -8,7 +8,7 @@ android {
     compileSdk androidCompileSdk
 
     defaultConfig {
-        applicationId "az.pashabank.androidstarter"
+        applicationId "az.pashabank.starter"
         minSdk androidMinSdk
         targetSdk androidTargetSdk
 
@@ -35,6 +35,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+    namespace 'az.pashabank.starter.app'
 }
 
 dependencies {

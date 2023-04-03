@@ -3,6 +3,7 @@ package digital.pashabank.presentation.di
 import digital.pashabank.presentation.base.LanguageContextWrapper
 import digital.pashabank.presentation.flow.main.MainViewModel
 import digital.pashabank.presentation.flow.main.content.MainPageViewModel
+import digital.pashabank.presentation.flow.main.login.LoginViewModel
 import digital.pashabank.presentation.flow.splash.SplashViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
@@ -28,6 +29,12 @@ val presentationModule = module {
 
     viewModel {
         MainViewModel(
+        )
+    }
+
+    viewModel {
+        LoginViewModel(
+            loginUseCase = get()
         )
     }
 

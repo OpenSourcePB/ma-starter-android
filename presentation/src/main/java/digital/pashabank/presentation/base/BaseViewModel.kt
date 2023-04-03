@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.lifecycle.*
 import androidx.navigation.NavDirections
 import androidx.navigation.Navigator
-import az.pashabank.androidstarter.presentation.R
+import az.pashabank.starter.presentation.R
 import digital.pashabank.domain.base.BaseUseCase
 import digital.pashabank.domain.base.CompletionBlock
 import digital.pashabank.domain.exceptions.NetworkError

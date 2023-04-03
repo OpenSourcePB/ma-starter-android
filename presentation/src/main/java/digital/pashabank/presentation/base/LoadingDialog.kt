@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.fragment.app.DialogFragment
-import az.pashabank.androidstarter.presentation.R
-import az.pashabank.androidstarter.presentation.databinding.DialogLoadingBinding
+import az.pashabank.starter.presentation.R
+import az.pashabank.starter.presentation.databinding.DialogLoadingBinding
 import digital.pashabank.presentation.delegate.viewBinding
 
 class LoadingDialog : DialogFragment() {
