@@ -35,7 +35,7 @@ android {
     buildFeatures {
         viewBinding true
     }
-    namespace 'az.pashabank.starter.app'
+    namespace 'az.pashabank.starter'
 }
 
 dependencies {
