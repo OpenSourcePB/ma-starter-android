@@ -22,7 +22,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    namespace 'app.pashabank.starter.data'
+    namespace 'az.pashabank.starter.data'
 }
 
 dependencies {

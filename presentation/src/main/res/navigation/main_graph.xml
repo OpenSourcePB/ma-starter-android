@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splash_fragment"
-        android:name="digital.pashabank.presentation.flow.splash.SplashFragment"
+        android:name="az.pashabank.presentation.flow.splash.SplashFragment"
         android:label="SplashFragment"
         tools:layout="@layout/fragment_splash">
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="digital.pashabank.presentation.flow.main.login.LoginFragment"
+        android:name="az.pashabank.presentation.flow.main.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login">
         <action
@@ -27,7 +27,7 @@
 
     <fragment
         android:id="@+id/mainPageFragment"
-        android:name="digital.pashabank.presentation.flow.main.content.MainPageFragment"
+        android:name="az.pashabank.presentation.flow.main.content.MainPageFragment"
         android:label="MainPageFragment"
         tools:layout="@layout/fragment_main_page" />
 
