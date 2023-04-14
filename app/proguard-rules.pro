@@ -32,15 +32,15 @@
     kotlinx.serialization.KSerializer serializer(...);
 }
 
--keep,includedescriptorclasses class digital.pashabank.**$$serializer { *; }
--keepclassmembers class digital.pashabank.** {
+-keep,includedescriptorclasses class az.pashabank.**$$serializer { *; }
+-keepclassmembers class az.pashabank.** {
     *** Companion;
 }
--keepclasseswithmembers class digital.pashabank.** {
+-keepclasseswithmembers class az.pashabank.** {
     kotlinx.serialization.KSerializer serializer(...);
 }
 
--keep class digital.pashabank.data.errors.RemoteErrors { *; }
+-keep class az.pashabank.data.errors.RemoteErrors { *; }
 
 
 # ---------------- Network ------------------

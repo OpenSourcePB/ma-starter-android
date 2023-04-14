@@ -9,12 +9,13 @@ android {
 
     defaultConfig {
         applicationId "az.pashabank.starter"
+        testApplicationId "az.pashabank.starter.test"
         minSdk androidMinSdk
         targetSdk androidTargetSdk
 
         versionCode 1
         versionName "v0.0.1"
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "az.pashabank.starter.test.runner.CustomCucumberAndroidJUnitRunner"
     }
 
     buildTypes {
@@ -48,6 +49,11 @@ dependencies {
 
     // Logger
     implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'androidx.test:core:1.5.0'
+    androidTestImplementation 'androidx.test:rules:1.5.0'
+    androidTestImplementation "io.cucumber:cucumber-android:4.10.0"
 
     // Test
     testImplementation "junit:junit:${jUnitVersion}"
